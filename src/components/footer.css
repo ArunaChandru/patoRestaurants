@@ -1,0 +1,67 @@
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 5rem 5rem 3rem 5rem;
+    color:white;
+    background-color: rgb(0, 0, 0,0.8);
+}
+.icon{
+   margin-left: -.5rem;
+   margin-right: .5rem;
+}
+
+.content{
+    padding-top:2.3rem;
+    color:rgb(189, 186, 186);
+}
+.content p{
+    display:inline;
+}
+.content .everyDay{
+    display:block;
+}
+
+.openinTime{
+    padding-top:2rem;
+}
+
+.galleryHead{
+    margin-left: 1.5rem;
+}
+
+.contentCol2{
+    padding-top:1rem;
+    color:rgb(189, 186, 186);
+}
+.contentCol2 div{
+    padding-top: 1rem;
+}
+.contentCol2 div h5{
+    display: inline;
+    color: red;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-left: .3rem;
+}
+.twittContent{
+    padding: .5rem;
+    font-size: 14px;
+}
+.link{
+    padding: .5rem;
+    font-size: 14px;
+    color: red;
+}
+.twittDate{
+    padding: 1.3rem 0rem;
+    font-size: 14px;
+    color: rgb(128, 128, 128,0.7);
+}
+
+
+/*-------------- Media Query -----------------------*/
+@media screen and (max-width:1000px) {
+    .footer{
+        display: block;
+    }
+}

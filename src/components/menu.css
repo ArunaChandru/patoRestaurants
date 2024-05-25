@@ -1,0 +1,274 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.menuContainer{
+    animation: fade 2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.Headimage{
+    background-image: url('./images/wallpaper6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 680px;
+}
+.Headimage .textBlock{
+    position:relative;
+    background-color: rgb(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+}
+.menuTitle{
+    position: absolute;
+    top:40%;
+    left:44%;
+    text-align: center;
+    font-size:3.5rem;
+    color:rgba(255, 255, 255);
+    text-shadow: 2px 2px black;
+}
+
+.menuCard{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "starters main"
+    "starters desserts";
+    gap:10px;
+    margin: 4%;
+}
+
+.menuItems{
+    text-align: left;
+    display: flex;
+    justify-content:start;
+}
+.starters{
+    grid-area: starters;
+}
+.starters div,
+.main div,
+.desserts div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap:20px;
+}
+.main{
+    grid-area: main;
+
+}
+.desserts{
+    grid-area: desserts;
+    margin-top: 30px;
+}
+
+/*---------------------- Luch Menu -------------------------*/
+.lunchImg{
+    background: url('./images/wallpaper8.png') fixed no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 350px;
+    width: 100vw;
+    margin-bottom: 20px;
+}
+.lunchTitle{
+    text-align: center;
+    color: white;
+    padding-top:10%;
+    font-size: 2.7rem;
+    text-shadow: 3px 3px black;
+
+}
+
+/*---------------------- Luch Menu List -------------------------*/
+h6{
+    font-weight: 500;
+    line-height: 20px;
+}
+.lunchMenu{
+    display: flex;
+    padding: 3rem;
+    gap:30px;
+}
+.lunchMenu .MenuPart1,
+.lunchMenu .MenuPart2{
+    flex-basis:50%;
+}
+
+.MenuPart1, .MenuPart2{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.lunchRow{
+    display: flex;
+    gap: 20px;
+}
+
+
+.lunchImage{
+    border-radius:5%;
+    cursor: pointer;
+    overflow: hidden;
+    transition-delay: 0.3s;
+}
+.foodPrice{
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.FoodImage1{
+    background:url('./images/menu/LunchMenuImg1.png') no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 180px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+.FoodImage2{
+    background:url('./images/menu/LunchMenuImg2.png') no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 180px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+.FoodImage3{
+    background:url('./images/menu/LunchMenuImg3.png') no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 180px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+.FoodImage4{
+    background:url('./images/menu/LunchMenuImg4.png') no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 180px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+.FoodImage5{
+    background:url('./images/menu/LunchMenuImg5.png') no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 180px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+.FoodImage6{
+    background:url('./images/menu/LunchMenuImg6.png') no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 180px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.lunchImage:hover .FoodImage1,
+.lunchImage:hover .FoodImage2,
+.lunchImage:hover .FoodImage3,
+
+.lunchImage:hover .FoodImage4,
+.lunchImage:hover .FoodImage5,
+.lunchImage:hover .FoodImage6,
+
+.lunchImage:hover .DinnerImage1,
+.lunchImage:hover .DinnerImage2,
+.lunchImage:hover .DinnerImage3,
+
+.lunchImage:hover .DinnerImage4,
+.lunchImage:hover .DinnerImage5,
+.lunchImage:hover .DinnerImage6
+{
+    transform: scale(1.1);
+}
+
+.DinnerImg{
+    background: url('./images/DinnerImg.webp') fixed no-repeat;
+    background-size: cover;
+    height: 350px;
+    width: 100vw;
+    margin-bottom: 20px;
+}
+
+.DinnerImage1{
+    background:url('./images/menu/DinnerMenuImg1.png') no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 180px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+.DinnerImage2{
+    background:url('./images/menu/DinnerMenuImg2.jpg') no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 180px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+.DinnerImage3{
+    background:url('./images/menu/DinnerMenuImg3.jpg') no-repeat center;
+    height: 150px;
+    width: 180px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+.DinnerImage4{
+    background:url('./images/menu/DinnerMenuImg4.png') no-repeat center;
+    height: 150px;
+    width: 180px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+.DinnerImage5{
+    background:url('./images/menu/DinnerMenuImg5.png') no-repeat;
+    height: 150px;
+    width: 180px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+.DinnerImage6{
+    background:url('./images/menu/DinnerMenuImg6.png') no-repeat center;
+    height: 150px;
+    width: 180px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+
+@media screen and (max-width:980px) {
+ .menuTitle{
+    left:37%;
+ }
+ .menuCard{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+  }
+  .lunchTitle{
+    padding-top: 20%;
+  }
+  .lunchMenu{
+    display: flex;
+    flex-direction: column;
+  }
+}

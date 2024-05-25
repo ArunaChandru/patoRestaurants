@@ -1,0 +1,87 @@
+.reservationComponent{
+    animation: fade 2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.reservationimage{
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    position: relative; 
+    background: url('./images/wallpaper7.jpg') no-repeat  left center;
+    background-size: cover;
+    width: 100%;
+    height: 680px;
+    margin-bottom:5%;
+}
+.reservationTitle{
+    position: absolute;
+    top:45%;
+    left:36%;
+}
+.reservationtitle{
+    text-align: center;
+    color:white;
+    text-shadow: 2px 2px black;
+    font-size:3rem;
+}
+
+/*-------------------- Form Reservation -------------------------------*/
+.ReservationForm{
+    padding: 3rem;
+    width: 100%;
+}
+.form {
+    padding-left: 4rem;
+    padding-top:3rem;
+}
+.form div{
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    margin-bottom:10px;
+}
+.form div .submitBtn{
+    margin-top:20px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+
+/*-------------------------- Reservation Type -------------------------------------*/
+
+.reservationType{
+    margin-top: 5%;
+    padding:5rem 3rem 3rem 5rem;
+    display: flex;
+    gap:10%;
+}
+.reservationType div{
+    flex: 1;
+}
+.reserveTitle{
+    color: rgb(66, 64, 64);
+    font-size:x-large;
+    font-weight: 900;
+}
+.reserveDetail{
+    margin-top: 20px;
+    color: #8c8c8c;
+}
+.bookingNumber{
+    display: inline-block;
+    color:red;
+    font-size: 16px;
+    font-weight: normal;
+}

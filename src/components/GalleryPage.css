@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+.galleryComponent{
+    animation: fade 2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.GalleryTitle{
+    position: absolute;
+    top:45%;
+    left:40%;
+}
+
+.linkButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3%;
+}
+.linkBtn{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    background-color: transparent;
+    border:none;
+    border-radius: 5px;
+    padding:5px 12px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.linkBtn:hover{
+    color: white;
+    background: #000;
+}
+.linkBtn.active{
+    color: white;
+    background: #000;
+}
+
+/*-------------------------- All Photo Display ------------------------------*/
+
+.galleryImages{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding-left:2.5rem;
+    padding-right:2rem;
+}
+.ImageRows{
+    display: flex;
+    gap:30px;
+}
+
+.ImageDiv{
+    position: relative;
+    border-radius:5%;
+    cursor: pointer;
+    overflow: hidden;
+    transition-delay: 0.3s;
+}
+
+/*-------------------------  Dispaly Images Block-----------------------------*/
+.Image1,
+.eventImage1,
+.vipGuestImage1{
+    background:url('./images/gallery/gallery1.jpg');
+    height: 300px;
+    width: 400px;
+    background-size: cover;
+    transition: transform 0.5s ease;
+}
+
+
+.Image2,
+.foodImage1{
+    background:url('./images/gallery/gallery2.jpg') right center;
+    height: 300px;
+    width: 400px;
+    background-size: cover;
+    transition: transform 0.5s ease;
+}
+
+
+.Image3,
+.eventImage2{
+    background:url('./images/gallery/gallery3.jpg');
+    height: 300px;
+    width: 400px;
+    background-size: cover;
+    transition: transform 0.5s ease;
+}
+
+.Image4,
+.foodImage2{
+    background:url('./images/gallery/gallery4.jpg');
+    height: 300px;
+    width: 400px;
+    background-size: cover;
+    transition: transform 0.5s ease;
+}
+
+
+.Image5,
+.foodImage3{
+    background:url('./images/gallery/gallery5.jpg');
+    height: 300px;
+    width: 400px;
+    background-size: cover;
+    transition: transform 0.5s ease;
+}
+
+.Image6, 
+.interiorImage1,
+.vipGuestImage2{
+    background:url('./images/gallery/gallery6.jpg');
+    height: 300px;
+    width: 400px;
+    background-size: cover;
+    transition: transform 0.5s ease;
+}
+
+
+.Image7, 
+.interiorImage2{
+    background:url('./images/gallery/gallery7.jpg');
+    height: 300px;
+    width: 400px;
+    background-size: cover;
+    transition: transform 0.5s ease;
+}
+
+.Image8, 
+.interiorImage3{
+    background:url('./images/gallery/gallery8.jpg');
+    height: 300px;
+    width: 400px;
+    background-size: cover;
+    transition: transform 0.5s ease;
+}
+
+.Image9,
+.eventImage3{
+    background:url('./images/gallery/gallery9.jpg');
+    height: 300px;
+    width: 400px;
+    background-size: cover;
+    transition: transform 0.5s ease;
+}
+
+.vipGuestImage3{
+    background:url('./images/wallpaper1.jpg');
+    height: 300px;
+    width: 400px;
+    background-size: cover;
+    transition: transform 0.5s ease;
+}
+
+.ImageDiv:hover .Image1,
+.ImageDiv:hover .eventImage1,
+.ImageDiv:hover .vipGuestImage1,
+
+.ImageDiv:hover .Image2,
+.ImageDiv:hover .foodImage1,
+
+.ImageDiv:hover .Image3,
+.ImageDiv:hover .eventImage2,
+
+.ImageDiv:hover .Image4,
+.ImageDiv:hover .foodImage2,
+
+.ImageDiv:hover .Image5,
+.ImageDiv:hover .foodImage3,
+
+.ImageDiv:hover .Image6,
+.ImageDiv:hover .interiorImage1,
+.ImageDiv:hover .vipGuestImage2,
+
+.ImageDiv:hover .Image7, 
+.ImageDiv:hover .interiorImage2,
+
+.ImageDiv:hover .Image8,
+.ImageDiv:hover .interiorImage3,
+
+.ImageDiv:hover .Image9,
+.ImageDiv:hover .eventImage3,
+
+.ImageDiv:hover .vipGuestImage3{
+    transform: scale(1.1);
+}
+
+/*------------------ Search Block style ---------------------------*/
+
+.searchDiv{
+    position: absolute;
+    background: rgba(255, 0, 0, 0.705);
+    height: 300px;
+    width: 400px;
+    opacity: 0;
+}
+.searchBtn{
+    position:relative;
+    top:40%;
+    left:42%;
+    padding:20px;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    background-color:white;
+}
+.searchIcon{
+    font-size:20px;
+    cursor: pointer;
+}
+.searchIcon:hover{
+    color:red;
+}
+
+.Image1:hover .searchDiv,
+.Image2:hover .searchDiv,
+.Image3:hover .searchDiv,
+.Image4:hover .searchDiv,
+.Image5:hover .searchDiv,
+.Image6:hover .searchDiv,
+.Image7:hover .searchDiv,
+.Image8:hover .searchDiv,
+.Image9:hover .searchDiv,
+
+.interiorImage1:hover .searchDiv,
+.interiorImage2:hover .searchDiv,
+.interiorImage3:hover .searchDiv,
+
+.foodImage1:hover .searchDiv,
+.foodImage2:hover .searchDiv,
+.foodImage3:hover .searchDiv,
+
+.eventImage1:hover .searchDiv,
+.eventImage2:hover .searchDiv,
+.eventImage3:hover .searchDiv,
+
+.vipGuestImage1:hover .searchDiv,
+.vipGuestImage2:hover .searchDiv,
+.vipGuestImage3:hover .searchDiv{
+    transition:all 1s 0.05s ease;
+    opacity: 1;
+}
+
+/*-------------------- Interior Block Style -----------------------*/
+
+.interiorPhotos, .foodPhotos, .eventsPhotos, .vipGuestPhotos{
+    display:none;
+    gap:30px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding-left:2rem;
+    padding-right:2rem;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width:980px) {
+    .GalleryTitle{
+        position: absolute;
+        top:45%;
+        left:30%;
+    }
+    .galleryImages .searchDiv{
+        width:210px;
+    }
+
+    .interiorImage1, .interiorImage2, .interiorImage3,
+    .foodImage1, .foodImage2, .foodImage3,
+    .eventImage1, .eventImage2, .eventImage3,
+    .vipGuestImage1, .vipGuestImage2, .vipGuestImage3, 
+    .interiorPhotos .searchDiv,
+    .eventsPhotos .searchDiv,
+    .foodPhotos .searchDiv,
+    .vipGuestPhotos .searchDiv{
+        height: 250px;
+        width: 250px;
+    }
+}
