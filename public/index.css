@@ -721,7 +721,7 @@ span{
 /*------------ Media Query ----------------*/
 
 /*------------- Media Query for Menu grid----------------*/
-@media screen and  (max-width: 1180px) and (min-width: 982px)  {
+@media screen and (max-width:1180px) and (min-width:982px){
   *{
     padding: 0px;
     margin: 0px;
@@ -736,7 +736,7 @@ span{
   
 }
 
-@media screen and (max-width:982px){
+@media screen and (max-width:980px){
   .menuGrid{
     display: grid;
     grid-template-columns: repeat(2,0.5fr);
